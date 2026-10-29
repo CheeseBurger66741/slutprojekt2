@@ -5,9 +5,24 @@
 $running = $true
 
 do {
-    Write-Host "=== AdminTools ==="
-    Write-Host "1. System Info"
+    Write-Host "===== AdminTools ====="
+    Write-Host ""
+    Write-Host "1. userInfo"
+    Write-Host ""
+    Write-Host "2. bootTime"
+    Write-Host "3. cpuinfo"
+    Write-Host "4. diskInfo"
+    Write-Host "5. memoryInfo"
+    Write-Host ""
+    Write-Host "6. environmentInfo"
+    Write-Host "7. networkInfo"
+    Write-Host "8. SystemInfo"
+    Write-Host ""
+    Write-Host "9. runningProcesses"
+    Write-Host "10. runningServices"
+    Write-Host ""
     Write-Host "0. Exit"
+    Write-Host "======================"
 
 
 
