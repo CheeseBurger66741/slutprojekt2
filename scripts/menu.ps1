@@ -1,15 +1,12 @@
 # AdminTools Menu
-# Endast alternativ 1 är färdigt.
-# Din uppgift är att koppla ihop resten av menyn.
-
 $running = $true
 
 do {
     Write-Host "===== AdminTools ====="
     Write-Host ""
     Write-Host "1. userInfo"
-    Write-Host ""
     Write-Host "2. bootTime"
+    Write-Host ""
     Write-Host "3. cpuinfo"
     Write-Host "4. diskInfo"
     Write-Host "5. memoryInfo"
@@ -31,7 +28,61 @@ do {
     switch ($choice) {
         1 { 
             Clear-Host 
-            .\systemInfo.ps1 #Behöver uppdatera din PATH om du lägger den i en mapp
+            ..\modules\userInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        2 { 
+            Clear-Host 
+            ..\modules\bootTime.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        3 { 
+            Clear-Host 
+            ..\modules\cpuinfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        4 { 
+            Clear-Host 
+            ..\modules\diskInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        5 { 
+            Clear-Host 
+            ..\modules\memoryInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        6 { 
+            Clear-Host 
+            ..\modules\environmentInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        7 { 
+            Clear-Host 
+            ..\modules\networkInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        8 { 
+            Clear-Host 
+            ..\modules\systemInfo.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        9 { 
+            Clear-Host 
+            ..\modules\runningProcesses.ps1 
+            Read-Host "Press Enter to return to menu"
+        }
+
+        10 { 
+            Clear-Host 
+            ..\modules\runningServices.ps1 
             Read-Host "Press Enter to return to menu"
         }
 
